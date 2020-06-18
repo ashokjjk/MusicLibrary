@@ -19,8 +19,16 @@ import ncl.ac.uk.service.AlbumService;
  */
 public class Album {
 
-	private List<AlbumService> albmLst = new ArrayList<AlbumService>();
-	Map<String, List<String>> albmTrkLst = new LinkedHashMap<String, List<String>>();
+	private List<AlbumService> albmLst;
+	Map<String, List<String>> albmTrkLst;
+
+	/**
+	 * Intializes the data members available in this class
+	 */
+	public Album() {
+		albmLst = new ArrayList<AlbumService>();
+		albmTrkLst = new LinkedHashMap<String, List<String>>();
+	}
 
 	/**
 	 * @return the initialized list of Album names as List<AlbumService>

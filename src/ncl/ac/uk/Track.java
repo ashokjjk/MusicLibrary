@@ -23,9 +23,17 @@ import ncl.ac.uk.service.TrackService;
  */
 public class Track {
 	String[] value;
-	private List<TrackService> trackLst = new ArrayList<TrackService>();
-	private Map<String, List<String>> bandLst = new HashMap<String, List<String>>();
-
+	private List<TrackService> trackLst;
+	private Map<String, List<String>> bandLst;
+	
+	/**
+	 * Intializes the data members of this class
+	 */
+	public Track() {
+		trackLst = new ArrayList<TrackService>();
+		bandLst = new HashMap<String, List<String>>();
+	}
+	
 	/**
 	 * @return the initialized list of bands as Map<String, List<String>>
 	 */

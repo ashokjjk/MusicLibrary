@@ -20,8 +20,16 @@ import ncl.ac.uk.service.TrackService;
  */
 public class Library {
 
-	List<TrackService> libTracks = new LinkedList<TrackService>();
-	Map<String, List<TrackService>> libMp = new HashMap<String, List<TrackService>>();
+	List<TrackService> libTracks;
+	Map<String, List<TrackService>> libMp;
+
+	/**
+	 * Intializes the data members of this class
+	 */
+	public Library() {
+		libTracks = new LinkedList<TrackService>();
+		libMp = new HashMap<String, List<TrackService>>();
+	}
 
 	/**
 	 * @return the initialized Library names and the tracks as Map<String>
