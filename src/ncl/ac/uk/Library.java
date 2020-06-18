@@ -16,7 +16,7 @@ import ncl.ac.uk.service.TrackService;
  * LibraryService
  * 
  * @see LibraryService for variable initialization
- * @implNote addTracksToLib, listTracks services are provided in this class
+ * @see addTracksToLib, listTracks services are provided in this class
  */
 public class Library {
 
@@ -24,8 +24,8 @@ public class Library {
 	Map<String, List<TrackService>> libMp = new HashMap<String, List<TrackService>>();
 
 	/**
-	 * @return the initialized Library names and the tracks as Map<STring>
-	 *         List<TrackService>>
+	 * @return the initialized Library names and the tracks as Map<String>
+	 *         List<TrackService>
 	 */
 	public Map<String, List<TrackService>> getLibMp() {
 		return libMp;
