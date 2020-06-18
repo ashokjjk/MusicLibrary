@@ -19,6 +19,13 @@ public class MenuService {
 	private Map<Integer, MenuInterf> menuNames = new Hashtable<Integer, MenuInterf>();
 
 	/**
+	 * @return menuNames as Map
+	 */
+	public Map<Integer, MenuInterf> getMenuNames() {
+		return menuNames;
+	}
+
+	/**
 	 * Intialize the constructor with the menu action objects. To eleminate multiple
 	 * if else statement based on user input
 	 * 

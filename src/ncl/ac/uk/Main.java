@@ -11,7 +11,9 @@ import ncl.ac.uk.service.MenuService;
  */
 public class Main {
 	/**
-	 * Creates a new object for {@link MenuService} and calls the start method
+	 * Creates a new object for {@link MenuService} and calls the start method.
+	 * 
+	 * @see Test cases are implemented in a seperate package {@link ncl.ac.uk.test}
 	 */
 	public static void main(String[] args) {
 		MenuService servObj = new MenuService();

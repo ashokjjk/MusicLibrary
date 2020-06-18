@@ -22,15 +22,14 @@ public class BinPackaging implements BinPackInterface {
 	 * 
 	 * @param libObj
 	 * @param libName
-	 * @param binSize Algorithm for bin packing by First fit ascending - Sort the
-	 *                list in an ascending order. - Get the total number of bins and
-	 *                its capacity. - Insert the first data into bin and decrease
-	 *                the available space in the current bin. - Check the next data
-	 *                size with the available bin space. - If it fits then insert
-	 *                into bin. And do the same step as above. - If it doesn't fit
-	 *                use the next bin that is available. - If no bins are available
-	 *                return the total sizes that has to be fitted. - Return the
-	 *                bins with the data.
+	 * @param binSize Algorithm for bin packing by First fit ascending 
+	 * - Sort the list in an ascending order. - Get the total number of bins and its capacity. 
+	 * - Insert the first data into bin and decrease the available space in the current bin. 
+	 * - Check the next data size with the available bin space. 
+	 * - If it fits then insert into bin. And do the same step as above. 
+	 * - If it doesn't fit use the next bin that is available. 
+	 * - If no bins are available return the total sizes that has to be fitted. 
+	 * - Return the number of bins with the data.
 	 * 
 	 * @return the number of bins required
 	 */

@@ -17,7 +17,7 @@ import ncl.ac.uk.service.TrackService;
 /**
  * It is the driver class for Media Library. Which accepts the List of tracks as
  * input and stores it in the List and Members in Map as Key value pair. All the
- * member variables of this class are private therefore getter setters are used
+ * member variables of this class are private therefore getter & setters are used
  * to initialize the member variables.
  * 
  */
@@ -118,7 +118,8 @@ public class Track {
 	 * @throws FileNotFoundException when resource file is not found.
 	 * 
 	 */
-	private void addMembers() throws FileNotFoundException {
+	public void addMembers() throws FileNotFoundException {
+		// O(n^2)
 		for (TrackService data : trackLst) {
 			List<String> trkMembrsLst = new LinkedList<String>();
 

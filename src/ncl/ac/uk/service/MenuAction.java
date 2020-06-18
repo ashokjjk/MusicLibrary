@@ -14,10 +14,19 @@ import ncl.ac.uk.Library;
 import ncl.ac.uk.MenuFactory;
 import ncl.ac.uk.Track;
 
+/**
+ * This class extends the {@link MenuFactory} for providing the implementation.
+ * Objects are created and maintaned here for each class {@link Track}
+ * {@link Album} {@link Library}
+ */
 public class MenuAction extends MenuFactory {
 	private Track trkObj = new Track();
 	private Album albmObj = new Album();
 	private Library libObj = new Library();
+
+	public MenuAction() {
+		super();
+	}
 
 	/**
 	 * This method accepts no pram but adds the available track in the text file at
@@ -213,7 +222,7 @@ public class MenuAction extends MenuFactory {
 		}
 
 		catch (NoSuchElementException e) {
-			System.out.println("Exception");
+			System.out.println("Exception" +e.getMessage());
 		}
 	}
 
